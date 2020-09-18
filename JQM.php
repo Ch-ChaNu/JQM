@@ -32,9 +32,9 @@ class JQM extends PluginBase implements Listener {
 		$player = $event->getPlayer ();
 		$n = ($player->getName());
 		if ($player->isOp ()) {
-			$this->getServer ()->broadcastMessage ("§l§b[§f Wave§b ]  §b{$n}님이 접속하셨습니다" ) ;
+			$this->getServer ()->broadcastMessage ("§l§b[§f +§b ]  §b{$n}님이 접속하셨습니다" ) ;
 		} else {
-			$this->getServer ()->broadcastMessage ("§l§b[§f Wave§b ]  §f{$n}님이 접속하셨습니다" );
+			$this->getServer ()->broadcastMessage ("§l§b[§f +§b ]  §f{$n}님이 접속하셨습니다" );
 		}
 	}
 	public function onQuit(PlayerQuitEvent $event) {
@@ -43,9 +43,9 @@ class JQM extends PluginBase implements Listener {
 		$n = ($player->getName());
 		
 		if ($player->isOp ()) {
-			$this->getServer ()->broadcastMessage ( "§l§b[§f Wave §b] §b{$n}님이 퇴장하셨습니다" );
+			$this->getServer ()->broadcastMessage ( "§l§b[§f  - §b] §b{$n}님이 퇴장하셨습니다" );
 		} else {
-			$this->getServer ()->broadcastMessage ( "§l§b[§f Wave§b ] §f{$n}님이 퇴장하셨습니다" );
+			$this->getServer ()->broadcastMessage ( "§l§b[§f  -§b ] §f{$n}님이 퇴장하셨습니다" );
 		}
 	}
 	
