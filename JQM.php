@@ -11,9 +11,6 @@ namespace jqm;
 
 use pocketmine\plugin\PluginBase;
 
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
-use pocketmine\command\PluginCommand;
 
 use pocketmine\event\Listener;
 use pocketmine\event\Player;
@@ -23,9 +20,7 @@ use pocketmine\event\player\PlayerQuitEvent;
 class JQM extends PluginBase implements Listener {
 	public function onEnable() {
 		$this->getServer ()->getPluginManager ()->registerEvents ( $this, $this );
-		
-		
-		$this->getServer()->getCommandMap()->register($this->getDescription()->getName(),$ji);
+
 	}
 	public function onJoin(PlayerJoinEvent $event) {
 		$event->setJoinMessage ( false );
