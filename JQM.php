@@ -5,7 +5,7 @@
  * @version α1
  * @main JQM\JQM
  * @api 3.0.0
- * @author sangchu
+ * @author ChaNu
  */
 namespace jqm;
 
